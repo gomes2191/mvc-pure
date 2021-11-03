@@ -1,0 +1,22 @@
+{
+    "name": "mvc/php",
+    "description": "MVC Framework PHP",
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core/",
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Francisco Aparecido",
+            "email": "gomes.tisystem@gmail.com"
+        }
+    ],
+
+    "require": {
+        "phpunit/phpunit": "^9.5",
+        "illuminate/database": "^8.69",
+        "jenssegers/blade": "^1.4"
+    }
+}

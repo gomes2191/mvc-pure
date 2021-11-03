@@ -16,6 +16,8 @@ $router->get('/ola-{valor}', 'App\Controllers\HomeController::hello');
 
 $router->get('/users', 'App\Controllers\HomeController::listUsers');
 
+//Users\Register::handle($view, $router);
+
 $result = $router->handler();
 
 if (!$result) {

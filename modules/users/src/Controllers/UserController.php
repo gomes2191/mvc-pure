@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Controllers;
+namespace Users\Controllers;
 
 use App\Models\User;
 use Core\Controller;
 
-class HomeController extends Controller
+class UserController extends Controller
 {
     public function hello($params)
     {

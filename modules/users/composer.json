@@ -1,0 +1,16 @@
+{
+    "name": "faga/mvc",
+    "description": "Módulos MVC/PHP",
+    "autoload": {
+        "psr-4": {
+            "Users\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Francisco Aparecido",
+            "email": "gomes.tisystem@gmail.com"
+        }
+    ],
+    "require": {}
+}

@@ -1,6 +1,6 @@
 <?php
 
-namespace Core;
+namespace Users;
 
 use Jenssegers\Blade\Blade;
 
@@ -10,10 +10,15 @@ class Register
 {
     public static function handle(Blade $view, Router $router)
     {
-        $loader = $view->getLoader();
 
-        $loader->addPath(__DIR__ . '/../app/Views');
-        
+       $view->__construct('/Views', false);
+
+        //echo $blade->render('homepage', ['name' => 'John Doe']);
+
+        //$loader = $view->getLoader();
+
+        //$loader->addPath(__DIR__ . '/../app/Views');
+
         $router->get('/users', 'App\Users\Controllers\UsersController::index');
     }
 }
