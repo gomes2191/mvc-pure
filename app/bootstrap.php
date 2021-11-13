@@ -12,11 +12,9 @@ $path = $_SERVER['REQUEST_URI'] ?? '/';
 $router = new Core\Router($method, $path);
 
 # Rotas
-$router->get('/ola-{valor}', 'App\Controllers\HomeController::hello');
+//$router->get('/teste-{valor}', 'App\Controllers\HomeController::hello');
 
-$router->get('/users', 'App\Controllers\HomeController::listUsers');
-
-//Users\Register::handle($view, $router);
+$router->get('teste', 'App\Controllers\TesteController::teste');
 
 $result = $router->handler();
 
